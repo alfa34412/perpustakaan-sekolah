@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Perpustakaan Sekolah SMAN 1 Plosoklaten</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo SMAN 1 Plosoklaten" class="logo-img">
+                <span>Perpustakaan SMAN 1 Plosoklaten</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="books.html">Buku</a></li>
+                <li><a href="#history" id="history-link" style="display:none;">Riwayat Baca</a></li>
+                <li><a href="#admin" id="admin-link" style="display:none;">Admin</a></li>
+                <li><button id="login-btn">Login</button></li>
+                <li><button id="logout-btn" style="display:none;">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="books" class="books-section">
+            
+            <div id="books-container" class="books-grid">
+                <!-- Books will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="history" class="history-section" style="display:none;">
+            <h2>Riwayat Baca</h2>
+            <div id="history-container">
+                <!-- History will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="admin" class="admin-section" style="display:none;">
+            <h2>Panel Admin</h2>
+            <div class="admin-content">
+                <div class="add-book">
+                    <h3>Tambah Buku</h3>
+                    <form id="add-book-form">
+                        <input type="text" id="book-title" placeholder="Judul Buku" required>
+                        <input type="text" id="book-author" placeholder="Penulis" required>
+                        <textarea id="book-synopsis" placeholder="Sinopsis" required></textarea>
+                        <input type="url" id="book-cover" placeholder="URL Sampul Buku" required>
+                        <input type="url" id="book-link" placeholder="Link FlipHTML" required>
+                        <button type="submit">Tambah Buku</button>
+                    </form>
+                </div>
+                <div class="student-activity">
+                    <h3>Aktivitas Siswa</h3>
+                    <div id="activity-container">
+                        <!-- Activities will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <select id="user-type" required>
+                    <option value="">Pilih Tipe Pengguna</option>
+                    <option value="student">Siswa</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <input type="text" id="username" placeholder="Username" required>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="button" id="toggle-password-login" class="toggle-password">*</button>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
