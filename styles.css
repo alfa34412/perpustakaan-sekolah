@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 15px;
+    border-radius: 500px;
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
@@ -112,7 +112,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(30,64,175,0.2));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.774), rgba(198, 209, 247, 0.795));
     background-image: url('fotosekolah.jpeg');
     background-size: cover;
     background-position: center;
@@ -121,12 +121,12 @@ body {
     padding: 4rem 2rem;
     text-align: center;
     position: relative;
-    border-radius: 20px;
+    
     overflow: hidden;
     min-height: 50vh;
     width: 95%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
 }
 
 .hero::before {
@@ -136,7 +136,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 10%;
+    
     background-color: rgba(209, 211, 218, 0.2);
     z-index: 1;
 }
@@ -162,8 +162,8 @@ body {
     width: 95%;
     height: 400px;
     object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     margin-top: 2rem;
 }
 
@@ -609,149 +609,4 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .nav-links {
-        margin-top: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-links li {
-        margin: 0.5rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-
-    .books-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .admin-content {
-        grid-template-columns: 1fr;
-    }
-
-    #book-viewer iframe {
-        width: 95%;
-        height: 80vh;
-    }
-
-    .viewer-header {
-        width: 95%;
-    }
-}
-
-/* Additional Mobile Responsiveness */
-@media (max-width: 480px) {
-    .navbar {
-        padding: 0.5rem 1rem;
-    }
-
-    .logo-img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .hero {
-        padding: 2rem 1rem;
-    }
-
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .books-section {
-        padding: 2rem 1rem;
-    }
-
-    .books-grid {
-        gap: 1rem;
-    }
-
-    .book-card {
-        margin: 0 auto;
-        max-width: 300px;
-    }
-
-    .history-section, .admin-section {
-        padding: 2rem 1rem;
-    }
-
-    .modal-content {
-        width: 90%;
-        margin: 20% auto;
-    }
-
-    .viewer-header {
-        padding: 0.5rem;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .viewer-header h2 {
-        font-size: 1.2rem;
-    }
-
-    #close-viewer {
-        align-self: flex-end;
-    }
-}
-
-/* Tablet Responsiveness */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .books-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
-    }
-
-    .admin-content {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1.3rem;
-    }
-}
-
-/* Desktop Enhancements */
-@media (min-width: 1025px) {
-    .books-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2.5rem;
-    }
-
-    .hero-content h1 {
-        font-size: 3.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1.8rem;
-    }
-
-    .navbar {
-        padding: 1rem 3rem;
-    }
-
-    .books-section, .history-section, .admin-section {
-        padding: 5rem 3rem;
-    }
-}
+/* Responsive Design - Removed mobile overrides to make mobile and desktop display the same */
