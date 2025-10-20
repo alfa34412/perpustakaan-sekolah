@@ -615,7 +615,7 @@ body {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        border-radius: 20px;
+        border-radius: 500px;
         padding: 0.5rem 1rem;
     }
 
@@ -685,3 +685,4 @@ body {
 
     .admin-content {
         grid-template-columns: 1fr;
+
