@@ -611,59 +611,52 @@ body {
 
 /*responsif design*/
 
+
 @media (max-width: 992px) {
     .navbar {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-        border-radius: 500px; 
-        padding: 0.5rem 1rem;
-    }
-
-    .nav-links {
+        width: 95%;
+        border-radius: 500px; /* tetap oval */
+        padding: 0.25rem 0.5rem; /* tetap ramping */
         flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 0.5rem;
+        justify-content: space-between;
     }
 
     .nav-links li {
-        margin: 0.5rem;
+        margin-left: 1rem;
     }
 
-    .hero {
-        padding: 3rem 1rem;
+    .hero-content h1 {
+        font-size: 2.2rem;
     }
 
-    .books-grid,
-    .stats-container,
-    .admin-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+    .hero-content p {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 95%;
-        border-radius: 500px; 
-        padding: 0.5rem 1rem;
+        border-radius: 500px; /* tetap kapsul */
+        padding: 0.25rem 0.5rem; /* jangan membesar */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-links {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0.25rem;
     }
 
     .nav-links li {
-        margin: 0.4rem 0;
+        margin: 0.25rem 0.5rem;
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .hero-content p {
@@ -675,34 +668,30 @@ body {
     .admin-content {
         grid-template-columns: 1fr;
     }
-
-    .book-card {
-        width: 90%;
-        margin: 0 auto;
-    }
 }
 
 @media (max-width: 480px) {
     .navbar {
         width: 95%;
-        border-radius: 500px; 
-        padding: 0.4rem 0.5rem;
+        border-radius: 500px;
+        padding: 0.2rem 0.4rem;
     }
 
-    .hero {
-        padding: 2rem 1rem;
+    .logo-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
     }
 
     .hero-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .hero-content p {
         font-size: 0.9rem;
-    }
-
-    .book-card {
-        width: 90%;
-        margin: 0 auto;
     }
 }
