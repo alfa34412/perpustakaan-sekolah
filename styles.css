@@ -609,20 +609,21 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Responsive Design - Removed mobile overrides to make mobile and desktop display the same */
+/*responsif design*/
 
 @media (max-width: 992px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
-        border-radius: 500px;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        border-radius: 500px; 
         padding: 0.5rem 1rem;
     }
 
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
         margin-top: 0.5rem;
     }
 
@@ -631,31 +632,25 @@ body {
     }
 
     .hero {
-        padding: 3rem 1.5rem;
-        min-height: 40vh;
+        padding: 3rem 1rem;
     }
 
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-
+    .books-grid,
+    .stats-container,
     .admin-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        font-size: 15px;
-    }
-
     .navbar {
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        border-radius: 500px; 
+        padding: 0.5rem 1rem;
     }
 
     .nav-links {
@@ -664,25 +659,50 @@ body {
     }
 
     .nav-links li {
-        margin: 0.5rem 0;
+        margin: 0.4rem 0;
     }
 
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .hero-content p {
         font-size: 1rem;
     }
 
-    .books-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stats-container {
-        grid-template-columns: 1fr;
-    }
-
+    .books-grid,
+    .stats-container,
     .admin-content {
         grid-template-columns: 1fr;
+    }
 
+    .book-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 95%;
+        border-radius: 500px; 
+        padding: 0.4rem 0.5rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .book-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
