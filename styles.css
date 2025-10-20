@@ -11,7 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #525151;
-    background-color: #c8d1ee;
+    background-color: rbga(0, 0, 139, 0.2);
 }
 
 /* Navbar */
@@ -755,3 +755,4 @@ body {
         padding: 5rem 3rem;
     }
 }
+
