@@ -1,4 +1,4 @@
-s/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +11,14 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #525151;
-    background-color: rbga(0, 0, 139, 0.2);
+    background-color: rgba(0, 0, 139, 0.1);
 }
 
 /* Navbar */
 .navbar {
     background: linear-gradient(135deg, rgba(61, 105, 252, 0.733), rgba(79, 148, 252, 0.747));
     color: rgba(255, 255, 255, 0.925);
-    padding: 0.75rem 1rem;
+    padding: 0.25rem 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,9 +35,9 @@ body {
 }
 
 .logo-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
     border-radius: 50%;
 }
 
@@ -159,11 +159,11 @@ body {
 }
 
 .school-photo {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 95%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-top: 2rem;
 }
 
@@ -755,4 +755,3 @@ body {
         padding: 5rem 3rem;
     }
 }
-
