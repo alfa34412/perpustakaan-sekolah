@@ -14,7 +14,6 @@ body {
     background-color: rgba(0, 0, 139, 0.1);
 }
 
-/* Navbar */
 .navbar {
     background: linear-gradient(135deg, rgba(61, 105, 252, 0.733), rgba(79, 148, 252, 0.747));
     color: rgba(255, 255, 255, 0.925);
@@ -110,7 +109,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.774), rgba(198, 209, 247, 0.795));
     background-image: url('fotosekolah.jpeg');
@@ -167,7 +165,6 @@ body {
     margin-top: 2rem;
 }
 
-/* Books Section */
 .books-section {
     padding: 4rem 2rem;
     background: rgba(255,255,255,0.2);
@@ -281,7 +278,6 @@ body {
     box-shadow: 0 0 10px rgba(0,123,255,0.5);
 }
 
-/* History Section */
 .history-section {
     padding: 4rem 2rem;
     background: #dbeafe;
@@ -332,7 +328,6 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Admin Section */
 .admin-section {
     padding: 4rem 2rem;
     background: rgba(255,255,255,0.2);
@@ -441,7 +436,6 @@ body {
     background: #0056b3;
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -553,7 +547,6 @@ body {
     box-shadow: 0 0 10px rgba(0,123,255,0.5);
 }
 
-/* Book Viewer */
 #book-viewer {
     position: fixed;
     top: 0;
@@ -609,4 +602,68 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/*responsif design*/
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+    }
+    
+    .nav-links li {
+        margin-left: 1rem;
+    }
+    
+    .nav-links a, .nav-links button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 2rem 1rem;
+        min-height: 40vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .school-photo {
+        height: 250px;
+    }
+    
+    .books-section {
+        padding: 2rem 1rem;
+    }
+    
+    .books-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .book-card {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    
+    .history-section {
+        padding: 2rem 1rem;
+    }
+    
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .admin-section {
+        padding: 2rem 1rem;
+    }
+    
+    .admin-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+        }
+                                  
